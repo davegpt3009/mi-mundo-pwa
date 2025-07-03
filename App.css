@@ -1,0 +1,167 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Mi Mundo - Configuración de colores y tipografías */
+:root {
+  /* Paleta de colores Mi Mundo */
+  --mi-mundo-dark: #12182B;
+  --mi-mundo-light: #F0EBE3;
+  --mi-mundo-yellow: #FFC700;
+  --mi-mundo-green: #A4E8AF;
+  
+  /* Configuración de fuentes */
+  --font-primary: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  
+  /* Configuración base de Tailwind adaptada */
+  --radius: 0.625rem;
+  --background: #F0EBE3;
+  --foreground: #12182B;
+  --card: #F0EBE3;
+  --card-foreground: #12182B;
+  --popover: #F0EBE3;
+  --popover-foreground: #12182B;
+  --primary: #12182B;
+  --primary-foreground: #F0EBE3;
+  --secondary: #A4E8AF;
+  --secondary-foreground: #12182B;
+  --muted: #F0EBE3;
+  --muted-foreground: #12182B;
+  --accent: #FFC700;
+  --accent-foreground: #12182B;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #12182B;
+  --input: #F0EBE3;
+  --ring: #FFC700;
+  --chart-1: #FFC700;
+  --chart-2: #A4E8AF;
+  --chart-3: #12182B;
+  --chart-4: #F0EBE3;
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: #12182B;
+  --sidebar-foreground: #F0EBE3;
+  --sidebar-primary: #FFC700;
+  --sidebar-primary-foreground: #12182B;
+  --sidebar-accent: #A4E8AF;
+  --sidebar-accent-foreground: #12182B;
+  --sidebar-border: #FFC700;
+  --sidebar-ring: #FFC700;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Colores personalizados de Mi Mundo */
+  --color-mi-mundo-dark: var(--mi-mundo-dark);
+  --color-mi-mundo-light: var(--mi-mundo-light);
+  --color-mi-mundo-yellow: var(--mi-mundo-yellow);
+  --color-mi-mundo-green: var(--mi-mundo-green);
+}
+
+.dark {
+  --background: #12182B;
+  --foreground: #F0EBE3;
+  --card: #12182B;
+  --card-foreground: #F0EBE3;
+  --popover: #12182B;
+  --popover-foreground: #F0EBE3;
+  --primary: #F0EBE3;
+  --primary-foreground: #12182B;
+  --secondary: #A4E8AF;
+  --secondary-foreground: #12182B;
+  --muted: #12182B;
+  --muted-foreground: #F0EBE3;
+  --accent: #FFC700;
+  --accent-foreground: #12182B;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: #FFC700;
+  --input: #12182B;
+  --ring: #FFC700;
+  --chart-1: #FFC700;
+  --chart-2: #A4E8AF;
+  --chart-3: #F0EBE3;
+  --chart-4: #12182B;
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: #12182B;
+  --sidebar-foreground: #F0EBE3;
+  --sidebar-primary: #FFC700;
+  --sidebar-primary-foreground: #12182B;
+  --sidebar-accent: #A4E8AF;
+  --sidebar-accent-foreground: #12182B;
+  --sidebar-border: #FFC700;
+  --sidebar-ring: #FFC700;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-primary);
+  }
+  
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  
+  /* Clases utilitarias para colores de Mi Mundo */
+  .bg-mi-mundo-dark { background-color: var(--mi-mundo-dark); }
+  .bg-mi-mundo-light { background-color: var(--mi-mundo-light); }
+  .bg-mi-mundo-yellow { background-color: var(--mi-mundo-yellow); }
+  .bg-mi-mundo-green { background-color: var(--mi-mundo-green); }
+  
+  .text-mi-mundo-dark { color: var(--mi-mundo-dark); }
+  .text-mi-mundo-light { color: var(--mi-mundo-light); }
+  .text-mi-mundo-yellow { color: var(--mi-mundo-yellow); }
+  .text-mi-mundo-green { color: var(--mi-mundo-green); }
+  
+  .border-mi-mundo-dark { border-color: var(--mi-mundo-dark); }
+  .border-mi-mundo-light { border-color: var(--mi-mundo-light); }
+  .border-mi-mundo-yellow { border-color: var(--mi-mundo-yellow); }
+  .border-mi-mundo-green { border-color: var(--mi-mundo-green); }
+  
+  /* Estilos para pixel art */
+  .pixelated {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+}

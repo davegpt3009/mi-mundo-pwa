@@ -1,0 +1,13 @@
+{
+      "name": "Mi Mundo",
+      "short_name": "MiMundo",
+      "start_url": ".",
+      "display": "standalone",
+      "background_color": "#12182B",
+      "theme_color": "#FFC700",
+      "icons": [{
+        "src": "robochito-sprite_5.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }]
+    }

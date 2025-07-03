@@ -1,0 +1,125 @@
+{
+  "frases": [
+    {
+      "id": 1,
+      "categoria": "motivacion",
+      "texto": "¡Hoy es un gran día para conquistar tus metas! Cada pequeño paso cuenta.",
+      "emoji": "🚀"
+    },
+    {
+      "id": 2,
+      "categoria": "productividad",
+      "texto": "Recuerda: una tarea completada es un Lúmen ganado. ¡Vamos por más!",
+      "emoji": "⚡"
+    },
+    {
+      "id": 3,
+      "categoria": "bienestar",
+      "texto": "No olvides tomar descansos. Tu mente necesita recargar energía.",
+      "emoji": "🌱"
+    },
+    {
+      "id": 4,
+      "categoria": "motivacion",
+      "texto": "Cada día es una nueva oportunidad para ser la mejor versión de ti mismo.",
+      "emoji": "✨"
+    },
+    {
+      "id": 5,
+      "categoria": "productividad",
+      "texto": "Divide las tareas grandes en pequeñas. Lo imposible se vuelve posible.",
+      "emoji": "🎯"
+    },
+    {
+      "id": 6,
+      "categoria": "bienestar",
+      "texto": "Celebra tus logros, por pequeños que sean. Mereces reconocimiento.",
+      "emoji": "🎉"
+    },
+    {
+      "id": 7,
+      "categoria": "motivacion",
+      "texto": "Tu futuro yo te agradecerá por el esfuerzo que haces hoy.",
+      "emoji": "🌟"
+    },
+    {
+      "id": 8,
+      "categoria": "productividad",
+      "texto": "La constancia vence al talento. Sigue adelante, paso a paso.",
+      "emoji": "🏃‍♂️"
+    },
+    {
+      "id": 9,
+      "categoria": "bienestar",
+      "texto": "Respira profundo. Estás haciendo un gran trabajo.",
+      "emoji": "🧘‍♀️"
+    },
+    {
+      "id": 10,
+      "categoria": "motivacion",
+      "texto": "Los obstáculos son oportunidades disfrazadas. ¡Tú puedes superarlos!",
+      "emoji": "💪"
+    },
+    {
+      "id": 11,
+      "categoria": "productividad",
+      "texto": "Organiza tu día como un arquitecto diseña un edificio: con propósito.",
+      "emoji": "🏗️"
+    },
+    {
+      "id": 12,
+      "categoria": "bienestar",
+      "texto": "Tu bienestar es la base de todo lo demás. Cuídate primero.",
+      "emoji": "💚"
+    },
+    {
+      "id": 13,
+      "categoria": "motivacion",
+      "texto": "Cada error es una lección, cada lección es un paso hacia el éxito.",
+      "emoji": "📚"
+    },
+    {
+      "id": 14,
+      "categoria": "productividad",
+      "texto": "Enfócate en el progreso, no en la perfección. Avanza siempre.",
+      "emoji": "📈"
+    },
+    {
+      "id": 15,
+      "categoria": "bienestar",
+      "texto": "Sonríe. Incluso en los días difíciles, hay algo por lo que estar agradecido.",
+      "emoji": "😊"
+    },
+    {
+      "id": 16,
+      "categoria": "motivacion",
+      "texto": "Tu potencial es infinito. Solo necesitas creer en ti mismo.",
+      "emoji": "🌈"
+    },
+    {
+      "id": 17,
+      "categoria": "productividad",
+      "texto": "Prioriza lo importante sobre lo urgente. Tu tiempo es valioso.",
+      "emoji": "⏰"
+    },
+    {
+      "id": 18,
+      "categoria": "bienestar",
+      "texto": "Desconéctate de vez en cuando. El mundo digital puede esperar.",
+      "emoji": "🔌"
+    },
+    {
+      "id": 19,
+      "categoria": "motivacion",
+      "texto": "Hoy es el día perfecto para comenzar algo nuevo.",
+      "emoji": "🌅"
+    },
+    {
+      "id": 20,
+      "categoria": "productividad",
+      "texto": "La disciplina es la puente entre metas y logros. Construye el tuyo.",
+      "emoji": "🌉"
+    }
+  ]
+}
+
