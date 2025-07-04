@@ -27,11 +27,11 @@ const ElRefugio = () => {
     let nuevoSaludo = ''
     
     if (hora >= 5 && hora < 12) {
-      nuevoSaludo = '¡Buenos días'
+      nuevoSaludo = '¡Buenos días!'
     } else if (hora >= 12 && hora < 18) {
-      nuevoSaludo = '¡Buenas tardes'
+      nuevoSaludo = '¡Buenas tardes!'
     } else {
-      nuevoSaludo = '¡Buenas noches'
+      nuevoSaludo = '¡Buenas noches!'
     }
     
     setSaludo(`${nuevoSaludo}, ${state.configuracion.nombreUsuario}!`)
