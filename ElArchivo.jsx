@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { useApp } from '../contexts/AppContext'
+import { useApp } from './AppContext.jsx'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
