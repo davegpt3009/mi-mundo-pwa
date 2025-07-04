@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { AppProvider } from './contexts/AppContext'
-import Navigation from './components/Navigation'
-import Robochito from './components/Robochito'
-import ElRefugio from './layouts/ElRefugio'
-import ElTaller from './layouts/ElTaller'
-import LaBoveda from './layouts/LaBoveda'
-import ElArchivo from './layouts/ElArchivo'
+import { AppProvider } from './AppContext'
+import Navigation from './Navigation'
+import Robochito from './Robochito'
+import ElRefugio from './ElRefugio'
+import ElTaller from './ElTaller'
+import LaBoveda from './LaBoveda'
+import ElArchivo from './ElArchivo'
 import './App.css'
 
 function App() {

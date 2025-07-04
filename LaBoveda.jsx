@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useApp } from '../contexts/AppContext'
-import LumenesCounter from '../components/LumenesCounter'
+import { useApp } from './AppContext'
+import LumenesCounter from './LumenesCounter'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
