@@ -5,6 +5,8 @@ const initialState = {
   lumenes: 0,
   tareas: [],
   recompensas: [],
+  rachaActual: 0,
+  ultimaFechaRacha: null,
   estadisticas: {
     tareasCompletadasHoy: 0,
     tareasCompletadasSemana: 0,
@@ -78,11 +80,24 @@ const appReducer = (state, action) => {
     case actionTypes.COMPLETE_TAREA:
       const tareaCompletada = state.tareas.find(t => t.id === action.payload.id)
       if (tareaCompletada && !tareaCompletada.completada) {
+        const ahora = new Date()
+        const hoy = ahora.toISOString().split('T')[0]
+        const ultima = state.ultimaFechaRacha ? state.ultimaFechaRacha.split('T')[0] : null
+        let nuevaRacha = state.rachaActual
+
+        if (ultima === hoy) {
+          // misma fecha, racha sin cambios
+        } else if (ultima && new Date(hoy) - new Date(ultima) === 86400000) {
+          nuevaRacha += 1
+        } else {
+          nuevaRacha = 1
+        }
+
         return {
           ...state,
-          tareas: state.tareas.map(tarea => 
-            tarea.id === action.payload.id 
-              ? { ...tarea, completada: true, fechaCompletada: new Date().toISOString() }
+          tareas: state.tareas.map(tarea =>
+            tarea.id === action.payload.id
+              ? { ...tarea, completada: true, fechaCompletada: ahora.toISOString() }
               : tarea
           ),
           lumenes: state.lumenes + (action.payload.lumenesRecompensa || 10),
@@ -90,7 +105,9 @@ const appReducer = (state, action) => {
             ...state.estadisticas,
             tareasCompletadasHoy: state.estadisticas.tareasCompletadasHoy + 1,
             lumenesGanadosHoy: state.estadisticas.lumenesGanadosHoy + (action.payload.lumenesRecompensa || 10)
-          }
+          },
+          rachaActual: nuevaRacha,
+          ultimaFechaRacha: hoy
         }
       }
       return state

@@ -195,7 +195,7 @@ const ElRefugio = () => {
             <CardContent>
               <div className="space-y-2">
                 <div className="text-3xl font-bold text-mi-mundo-dark">
-                  1
+                  {state.rachaActual}
                 </div>
                 <p className="text-mi-mundo-dark/60">
                   Días consecutivos
