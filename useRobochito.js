@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import frasesData from '../data/robochito-frases.json'
+import frasesData from './robochito-frases.json'
 
 export const useRobochito = () => {
   const [fraseDelDia, setFraseDelDia] = useState(null)
